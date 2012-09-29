@@ -1,0 +1,3 @@
+jeka_yandex_yml_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: JekaYandexYMLBundle:Default:index }

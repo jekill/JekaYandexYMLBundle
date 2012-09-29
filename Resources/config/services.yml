@@ -1,0 +1,7 @@
+parameters:
+#    jeka_yandex_yml.example.class: Jeka\YandexYMLBundle\Example
+
+services:
+#    jeka_yandex_yml.example:
+#        class: %jeka_yandex_yml.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
