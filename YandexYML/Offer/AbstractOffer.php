@@ -2,6 +2,10 @@
 
 namespace Jeka\YandexYMLBundle\YandexYML\Offer;
 
+use DOMDocument;
+use DOMElement;
+use DOMAttr;
+
 abstract class AbstractOffer
 {
 

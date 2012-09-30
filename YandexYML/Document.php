@@ -86,6 +86,21 @@ class Document
         $this->categories = $categories;
     }
 
+    public function getShopName()
+    {
+        return $this->shopName;
+    }
+
+    public function getShopUrl()
+    {
+        return $this->shopUrl;
+    }
+
+    public function getShopCompany()
+    {
+        return $this->shopCompany;
+    }
+
     public function setLocalDeliveryCost($value)
     {
         $this->localDeliveryCost = $value;

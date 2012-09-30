@@ -1,7 +1,10 @@
 parameters:
-#    jeka_yandex_yml.example.class: Jeka\YandexYMLBundle\Example
+    jeka.yandex_yml.document.class: Jeka\YandexYMLBundle\YandexYML\Document
+    jeka.yandex_yml.shop_name: Test shop name
+    jeka.yandex_yml.shop_company: Test company LTD
+    jeka.yandex_yml.shop_url: https://github.com/jekill/JekaYandexYMLBundle
 
 services:
-#    jeka_yandex_yml.example:
-#        class: %jeka_yandex_yml.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
+    jeka.yandex_yml.document:
+        class: %jeka.yandex_yml.document.class%
+        arguments: [%jeka.yandex_yml.shop_name%, %jeka.yandex_yml.shop_company%, %jeka.yandex_yml.shop_url%]
