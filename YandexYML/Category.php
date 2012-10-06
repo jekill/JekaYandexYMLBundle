@@ -3,6 +3,7 @@
 namespace Jeka\YandexYMLBundle\YandexYML;
 
 use DOMDocument;
+use Jeka\YandexYMLBundle\Exception\YandexYMLException;
 use DOMAttr;
 use DOMElement;
 
@@ -24,6 +25,9 @@ class Category
      */
     public function __construct($id, $name, $parentId = null, array $options = array())
     {
+        if (!is_integer($id)){
+            throw new YandexYMLException("id must be integer");
+        }
         $this->id   = $id;
         $this->name = htmlspecialchars($name);
 
